@@ -1,0 +1,447 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#"
+     xml:base="http://www.semanticweb.org/cooper/ontologies/2017/8/sports"
+     xmlns:sports="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#PlaysIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#PlaysIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#hasClub -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#hasClub">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#hasTeam"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Club"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#hasSport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#hasSport">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Competition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Sport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#hasTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#hasTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Club"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Admin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Admin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#AmateurClub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#AmateurClub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Club"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#AmateurCompetition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#AmateurCompetition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Competition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Assistant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Assistant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Coach"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Attacker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Attacker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#CAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#CAM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Midfielder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#CB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#CB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Defender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#CM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#CM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Midfielder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Club -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Club"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Coach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Coach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Competition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Competition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Defender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Defender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Admin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Doctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#FirstGrade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#FirstGrade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#GK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#GK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Defender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Head -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Head">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Coach"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#JuniorClub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#JuniorClub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#AmateurClub"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#LB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#LB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Defender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#LW -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#LW">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Attacker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Midfielder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Midfielder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Physio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Physio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Doctor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Position"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#ProfessionalClub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#ProfessionalClub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Club"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#ProfessionalCompetition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#ProfessionalCompetition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Competition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#RB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#RB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Defender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#RW -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#RW">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Attacker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#ReserveGrade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#ReserveGrade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#ST -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#ST">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Attacker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Secretary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Secretary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Admin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#SemiProClub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#SemiProClub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Club"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#SemiProCompetition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#SemiProCompetition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Competition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Sport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Sport"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Team"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Trainer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Trainer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Coach"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Under18 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Under18">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Under21 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Under21">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Liverpool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Liverpool">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Club"/>
+        <PlaysIn rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#PremierLeague"/>
+        <hasTeam rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#LiverpoolFirstGrade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#LiverpoolFirstGrade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#LiverpoolFirstGrade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#PremierLeague -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#PremierLeague">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#ProfessionalCompetition"/>
+        <hasSport rdf:resource="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Soccer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Soccer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#Soccer"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#AmateurClub"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#ProfessionalClub"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cooper/ontologies/2017/8/sports#SemiProClub"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
